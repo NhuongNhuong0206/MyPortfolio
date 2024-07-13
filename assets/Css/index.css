@@ -1,0 +1,27 @@
+:root {
+    --size-left: 40%;
+}
+.left {
+    width: var(--size-left);
+    height: 100%;
+    background-color: #f7f6f9;
+}
+.right {
+    width: calc(100% - var(--size-left));
+    height: 100%;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 2px 2px 16px rgba(202, 202, 207, 0.8), -2px -2px 16px rgba(234, 226, 226, 0.6);
+}
+.name{
+    color: #151e28;
+    font-size: 20px;
+    font-weight: bold;
+}
+.school{
+}
+.school-link{
+    text-decoration: none;
+    color: #151e28;
+}
