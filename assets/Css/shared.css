@@ -4,7 +4,7 @@
 .app {
     font-family: Arial;
     display: flex;
-    margin: 0 80px 2px;
+    margin: 0 80px 10px;
     border-radius: 40px;
     overflow: hidden;
     border: solid 6px #151e28;

@@ -2,7 +2,7 @@
     --size-left: 40%;
     --size-avatar: 180px;
     --color-text: #151e28;
-    --size-height-item-right: 60px;
+    --size-height-item-right: 80px;
     --color-icon: #5ca1ea;
 }
 .left {
@@ -227,24 +227,28 @@
 }
 .right-body {
     width: 100%;
+    height: calc(100vh - 160px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 10px;
 }
 .right-body-item {
     width: calc(100% - 20px);
     height: 300px;
     background-color: #f6f8f9;
     margin-left: 14px;
+    padding-right: 10px;
     margin-top: 20px;
     box-shadow: 2px 2px 2px rgba(202, 202, 207, 0.8),
         -2px -2px 2px rgba(234, 226, 226, 0.6);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    position: relative;
+        padding-bottom: 10px;
 }
 .right-function-contain {
     display: flex;
-    
-}
-.right-body-item {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .right-body-item-header {
     width: 100%;
@@ -260,7 +264,18 @@
 .right-daystart {
     font-weight: 400;
     font-size: 16px;
+}
+.link-github {
+    font-weight: 200;
+    font-size: 10px;
     margin-top: 5px;
+    color: initial;
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 0;
+}
+.link-github:hover {
+    opacity: 0.6;
 }
 .right-function {
     width: 100%;
@@ -269,19 +284,20 @@
 .right-function-contain {
     width: 100%;
     height: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 .right-function-item {
-    width: 200px;
+    min-width: 400px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 10px;
-    background-color: var(--color-icon);
+    background-color: #9abee2;
     border-radius: 30px;
     box-shadow: 2px 2px 2px rgba(202, 202, 207, 0.8),
         -2px -2px 2px rgba(234, 226, 226, 0.6);
+
 }
 .right-function-prove {
     width: 70%;
@@ -295,9 +311,41 @@
     height: 100%;
     object-fit: cover;
 }
-.right-function-describe {
+.functional-order {
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+.functional-text {
     padding-left: 10px;
     width: 50%;
     color: var(--color-text);
     font-size: 16px;
+}
+.btn-scroll {
+    position: absolute;
+    background-color: #eceef0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 15px;
+    top: calc(
+        calc(
+                calc(100% - var(--size-height-item-right)) +
+                    var(--size-height-item-right)
+            ) / 2
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px rgba(202, 202, 207, 0.8),
+        -2px -2px 2px rgba(234, 226, 226, 0.6);
+    opacity: 0.9;
+}
+.btn-scroll:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+.moveicon {
+    font-size: 20px;
+    color: var(--color-icon);
 }
