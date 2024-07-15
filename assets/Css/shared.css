@@ -8,16 +8,23 @@
     border-radius: 40px;
     overflow: hidden;
     border: solid 6px #151e28;
+    
 }
 .header {
     width: var(--size-header);
-    height: calc(100vh - 46px);
+    min-height: calc(100vh - 46px);
     background-color: #151e28;
     padding: 10px;
 }
-
+.top {
+    color: #ffffff;
+    font-weight: 550;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+    background-color: #151e28;
+}
 .body {
     display: flex;
-    background-color: #f7f6f9;
     width: calc(100% - var(--size-header));
 }
