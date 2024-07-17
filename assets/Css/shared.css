@@ -15,14 +15,16 @@
     min-height: calc(100vh - 46px);
     background-color: #151e28;
     padding: 10px;
+    position: relative;
 }
-.top {
+.header-top {
     color: #ffffff;
     font-weight: 550;
     width: 100%;
     text-align: center;
     margin-top: 16px;
     background-color: #151e28;
+    font-size: 18px;
 }
 .body {
     display: flex;
